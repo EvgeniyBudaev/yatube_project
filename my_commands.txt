@@ -1,0 +1,21 @@
+Создание виртуального окружения
+python3 -m venv venv
+
+Запуск виртуального окружения проекта
+В Windows: .\venv\Scripts\activate
+В macOS или Linux: source venv/bin/activate
+
+Остановка виртуального окружения
+deactivate
+
+Установка pytest и запуск тестов
+pip install pytest pytest --version
+
+Обновить менеджеров пакетов pip
+python3 -m pip install --upgrade pip
+
+Установка Django версии 2.2.19
+pip install Django==2.2.19
+
+Генерация SSH ключа
+ssh-keygen -t rsa -b 4096 -C "budaev.e@gmail.com"
