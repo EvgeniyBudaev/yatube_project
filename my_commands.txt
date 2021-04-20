@@ -44,3 +44,24 @@ python manage.py migrate
 
 Создать супер пользователя
 python manage.py createsuperuser
+
+Сборка всей статики
+python manage.py collectstatic
+
+
+GIT
+# Добавить папку в игнор-лист гита
+# командой из корневой директории проекта (а можно дописать gitignore руками)
+echo 'static' >> .gitignore
+
+# Удалить папку из списка отслеживаемых файлов (staging area)
+git rm -r --cached static
+
+# Добавить файл в гит
+git add .gitignore
+
+# Зафиксировать изменения в новом коммите
+git commit -m 'Директория static добавлена в gitignore'
+
+# Запушить
+git push
