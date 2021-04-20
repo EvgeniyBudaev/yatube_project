@@ -31,3 +31,16 @@ $ pip install -r requirements.txt
 
 Создать базовую структуру проекта
 django-admin startproject yatube
+или
+python3 -m django startapp yatube
+
+Запуск сервера
+python3 manage.py runserver
+
+Создать миграцию
+python manage.py makemigrations
+Запустить все миграции
+python manage.py migrate
+
+Создать супер пользователя
+python manage.py createsuperuser

@@ -200,6 +200,9 @@ frontend/.idea
 **.idea
 */.idea/*
 
+# Visual Studio Code
+.vscode/
+
 # Runtime data
 pids
 *.pid
